@@ -21,7 +21,15 @@ public class Main {
 //        System.out.println(st2);
 //        //System.out.println(st3);
 
+        //@980
         Student st = new Student("Manvendra", 24, "LLD", 96.5, 99.5);
+
+        System.out.println(st + " before calling fun() method."); // @980
+
+        fun(st);
+
+        System.out.println(st + " after calling fun() method."); // @980
+
 
         Student st1 = new Student();
 
@@ -38,7 +46,12 @@ public class Main {
 
         Student stCopy = new Student(st);
 
-        System.out.println("DEBUG");
+        //System.out.println("DEBUG");
+    }
+
+    static void fun(Student st) {
+        st = new Student();
+        System.out.println(st + " Inside fun() method."); // @1020
     }
 
     // fun();
