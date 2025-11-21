@@ -25,11 +25,12 @@ public class Main {
         Student st = new Student("Manvendra", 24, "LLD", 96.5, 99.5);
 
         System.out.println(st + " before calling fun() method."); // @980
+        System.out.println(st.age + " Age  before calling fun() method."); // 24
 
         fun(st);
 
         System.out.println(st + " after calling fun() method."); // @980
-
+        System.out.println(st.age + " Age  after calling fun() method."); // 24
 
         Student st1 = new Student();
 
@@ -50,8 +51,9 @@ public class Main {
     }
 
     static void fun(Student st) {
-        st = new Student();
-        System.out.println(st + " Inside fun() method."); // @1020
+        //st = new Student();
+        st.age = 34;
+//        System.out.println(st + " Inside fun() method."); // @1020
     }
 
     // fun();
