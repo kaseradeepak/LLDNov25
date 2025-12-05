@@ -20,5 +20,7 @@ public class Client {
         set.add("Sri Lanka");
 
         System.out.println(set);
+
+        Map<Integer, String> map = new HashMap<>();
     }
 }
