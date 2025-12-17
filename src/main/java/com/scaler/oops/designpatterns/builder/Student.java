@@ -8,7 +8,6 @@ public class Student {
     int gradYear;
     // ....Lot of attrs.
 
-
     private Student(Builder builder) {
 //        //Validations start.
 //        if(builder.getAge() < 18) {
