@@ -42,7 +42,6 @@ public class Client {
 }
 
 /**
- *
  * 1. getBuilder() static method
  * 2. Make the Builder class static
  * 3. build method in Builder class.
